@@ -248,4 +248,4 @@ const CheckinForm = (props) => {
   );
 };
 
-export default CheckinForm;
+export default CheckinForm; 

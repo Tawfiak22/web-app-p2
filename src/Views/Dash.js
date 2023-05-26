@@ -11,7 +11,7 @@ function Dash(props) {
   const [checkins, setCheckins] = useState([]);
   const { createCheckinComment, getCheckins } = useCheckin();
 
-  const getCheckinData = async () => {
+ /* const getCheckinData = async () => {
     const checkinsSnap = await getCheckins();
     let checkins = [];
     if (checkinsSnap.size) {
@@ -21,6 +21,18 @@ function Dash(props) {
       setCheckins(checkins.reverse());
     }
   };
+*/
+
+const getCheckinData = async () => {
+  const checkinsSnap = await getCheckins();
+  let checkins = [];
+  if (checkinsSnap.size) {
+    checkinsSnap.forEach((doc) => {
+      checkins.push({ ...doc.data(), ...{ id: doc.id } });
+    });
+    setCheckins(checkins.reverse());
+  }
+};
 
   useEffect(() => {
     getCheckinData();
