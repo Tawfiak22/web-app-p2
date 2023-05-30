@@ -68,12 +68,9 @@ function LoginForm(props) {
   return (
     <React.Fragment>
       <StyledSocialIconArea>
-        <img
-          src={facebook}
-          alt="#"
-          onClick={() => onSocialSubmit("facebook")}
-        />
+        <img src={facebook} alt="#" onClick={() => onSocialSubmit("facebook")}/>
         <img src={google} alt="#" onClick={() => onSocialSubmit("google")} />
+        
       </StyledSocialIconArea>
       <StyledHeading> OR </StyledHeading>
 
