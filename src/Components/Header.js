@@ -50,7 +50,7 @@ const StyledBurgerMenu = styled.div`
 
 const StyledUserAvatar = styled.div`
     color: ${({ theme }) => theme.colors.darkShade[50]};
-    display: flex;
+    display: none;
     align-items: center;
     img {
       margin-top: 8%;
