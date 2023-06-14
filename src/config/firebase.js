@@ -1,7 +1,3 @@
-/**
- * Rename and replace with your config
- */
-
  const firebaseConfig = {
 	apiKey: "AIzaSyA60AZRa-mRRe8lZi1EUo5uOG4D39Zze_I",
 	authDomain: "web-app-p2.firebaseapp.com",
