@@ -3,7 +3,6 @@ import useAuth from "../services/firebase/useAuth";
 import useCheckin from "../services/firebase/useCheckin";
 import Tile from "./Tile";
 import styled from "styled-components";
-import avatarSmall from "../assets/avatar_small.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Histogram from "./Histogram";
